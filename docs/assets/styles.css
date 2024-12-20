@@ -19,7 +19,7 @@
     width: min(1080px,70vmin);
     margin: auto;
     outline-style: dashed;
-    font-family: "Poiret One", Arial, Helvetica, sans-serif;
+    font-family: 'poiret-one-regular', Arial, Helvetica, sans-serif;
 }
 .header{
 background-color: antiquewhite;
