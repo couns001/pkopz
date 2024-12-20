@@ -1,0 +1,26 @@
+/*css file created by couns001*/
+/*created 2024-10-31 | recreated 2024-12-20*/
+
+/*fonts*/
+.poiret-one-regular {
+    font-family: "Poiret One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.big-shoulders-inline-display {
+  font-family: "Big Shoulders Inline Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*main parameters*/
+.body{
+    width: min(1080px,70vmin);
+    margin: auto;
+    outline-style: dashed;
+    font-family: "Poiret One", Arial, Helvetica, sans-serif;
+}
+.header{
+background-color: antiquewhite;
+}
