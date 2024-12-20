@@ -2,15 +2,16 @@
 /*created 2024-10-31 | recreated 2024-12-20*/
 
 /*main parameters*/
-.body{
-    width: min(1080px,70vmin);
-    margin: auto;
-    outline-style: dashed;
-    font-family: "Poiret One", Arial, Helvetica, sans-serif;
+.body {
+  width: min(1080px, 70vmin);
+  margin: auto;
+  outline-style: dashed;
+  font-family: "Poiret One", Arial, Helvetica, sans-serif;
 }
-.header{
-background-color: antiquewhite;
+.header {
+  background-color: antiquewhite;
 }
-h1{
-    font-family: "Big Shoulders Inline Display",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+:is(h*) {
+  font-family: "Big Shoulders Inline Display", "Gill Sans", "Gill Sans MT",
+    Calibri, "Trebuchet MS", sans-serif;
 }
