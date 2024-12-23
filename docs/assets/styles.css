@@ -8,20 +8,31 @@ body {
   outline-style: dashed;
   font-family: "Poiret One", Arial, Helvetica, sans-serif;
 }
-header {
-  background-color: antiquewhite;
-}
 :is(h1, h2, h3, h4) {
   font-family: "Big Shoulders Inline Display", "Gill Sans", "Gill Sans MT",
     Calibri, "Trebuchet MS", sans-serif;
 }
 .gallery-scroller {
   display: grid;
+  gap: 2rem;
   grid-auto-flow: column;
   grid-auto-columns: 19%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12%;
 }
 .gallery-element {
+  display: grid;
   max-width: 200px;
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12%;
+}
+.gallery-element > img {
+  inline-size: 100%;
+  aspect-ratio: 9/16;
+  object-fit: cover;
+  border-radius: 12%;
 }
