@@ -3,7 +3,7 @@
 
 /*main parameters*/
 body {
-  width: min(1200px, 80vmin);
+  width: 90vmin;
   margin: auto;
   outline-style: dashed;
   font-family: "Poiret One", Arial, Helvetica, sans-serif;
