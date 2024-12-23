@@ -26,7 +26,7 @@ body {
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   background: rgba(0, 0, 0, 0.3);
-  border-radius: var(--width-large);
+  border-radius: var(--width-huge);
 }
 .gallery-element {
   display: grid;
@@ -34,11 +34,11 @@ body {
   gap: 2rem;
   padding: 2rem;
   background: rgba(0, 0, 0, 0.2);
-  border-radius: var(--width-large);
+  border-radius: var(--width-huge);
 }
 .gallery-element > img {
   inline-size: 100%;
   aspect-ratio: 9/16;
   object-fit: cover;
-  border-radius: var(--width-large);
+  border-radius: var(--width-huge);
 }
