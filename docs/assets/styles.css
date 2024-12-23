@@ -18,7 +18,7 @@ body {
 :is(h1, h2, h3, h4) {
   font-family: "Poiret One", Arial, Helvetica, sans-serif;
 }
-.gallery-scroller {
+.gallery-section {
   display: grid;
   gap: 2rem;
   grid-auto-flow: column;
