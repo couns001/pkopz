@@ -20,25 +20,24 @@ body {
 }
 .gallery-section {
   display: grid;
-  gap: var(--width-medium);
+  gap: var(--width-small);
   grid-auto-flow: column;
-  grid-auto-columns: 21%;
-  background: rgba(0, 0, 0, 0.3);
+  grid-auto-columns: 23%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 }
 .gallery-element {
   display: grid;
   grid-template-rows: min-content;
-  max-width: 200px;
-  gap: var(--width-medium);
+  max-width: 250px;
+  gap: var(--width-small);
   padding: var(--width-small);
   background: rgba(0, 0, 0, 0.2);
-  border-radius: var(--width-large);
+  border-radius: var(--width-small);
 }
 .gallery-element > img {
   inline-size: 100%;
   aspect-ratio: 9/16;
   object-fit: cover;
-  border-radius: var(--width-large);
+  border-radius: var(--width-small);
 }
