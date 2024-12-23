@@ -25,6 +25,7 @@ body {
   grid-auto-columns: 23%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
+  margin-bottom: var(--width-regular);
 }
 .gallery-element {
   display: grid;
