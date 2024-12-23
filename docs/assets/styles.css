@@ -24,7 +24,6 @@ body {
   grid-auto-flow: column;
   grid-auto-columns: 21%;
   background: rgba(0, 0, 0, 0.3);
-  border-radius: var(--width-large);
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 }
