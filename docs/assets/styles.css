@@ -6,11 +6,17 @@ body {
   width: 90vmin;
   margin: auto;
   outline-style: dashed;
-  font-family: "Poiret One", Arial, Helvetica, sans-serif;
+  /*custom properties library*/
+  --width-micro: 0.5rem;
+  --width-mini: 0.75rem;
+  --width-small: 1rem;
+  --width-regular: 1.5rem;
+  --width-medium: 2rem;
+  --width-large: 4rem;
+  --width-huge: 10rem;
 }
 :is(h1, h2, h3, h4) {
-  font-family: "Big Shoulders Inline Display", "Gill Sans", "Gill Sans MT",
-    Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poiret One", Arial, Helvetica, sans-serif;
 }
 .gallery-scroller {
   display: grid;
@@ -20,7 +26,7 @@ body {
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   background: rgba(0, 0, 0, 0.3);
-  border-radius: 12%;
+  border-radius: var(--width-large);
 }
 .gallery-element {
   display: grid;
@@ -28,11 +34,11 @@ body {
   gap: 2rem;
   padding: 2rem;
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 12%;
+  border-radius: var(--width-large);
 }
 .gallery-element > img {
   inline-size: 100%;
   aspect-ratio: 9/16;
   object-fit: cover;
-  border-radius: 12%;
+  border-radius: var(--width-large);
 }
