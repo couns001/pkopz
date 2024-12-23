@@ -10,9 +10,9 @@ body {
   --width-micro: 0.5rem;
   --width-mini: 0.75rem;
   --width-small: 1rem;
-  --width-regular: 1.5rem;
-  --width-medium: 2rem;
-  --width-large: 4rem;
+  --width-regular: 1.25rem;
+  --width-medium: 2.5rem;
+  --width-large: 5rem;
   --width-huge: 10rem;
 }
 :is(h1, h2, h3, h4) {
@@ -20,25 +20,26 @@ body {
 }
 .gallery-section {
   display: grid;
-  gap: 2rem;
+  gap: var(--width-medium);
   grid-auto-flow: column;
-  grid-auto-columns: 19%;
+  grid-auto-columns: 21%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: var(--width-large);
   overflow-x: auto;
   overscroll-behavior-inline: contain;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: var(--width-huge);
 }
 .gallery-element {
   display: grid;
+  grid-template-rows: min-content;
   max-width: 200px;
-  gap: 2rem;
-  padding: 2rem;
+  gap: var(--width-medium);
+  padding: var(--width-small);
   background: rgba(0, 0, 0, 0.2);
-  border-radius: var(--width-huge);
+  border-radius: var(--width-large);
 }
 .gallery-element > img {
   inline-size: 100%;
   aspect-ratio: 9/16;
   object-fit: cover;
-  border-radius: var(--width-huge);
+  border-radius: var(--width-large);
 }
