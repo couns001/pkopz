@@ -26,6 +26,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   grid-auto-columns: 21%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
+  border-radius: var(--width-small);
   margin-bottom: var(--width-regular);
 }
 .gallery-element {
@@ -34,7 +35,6 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 250px;
   gap: var(--width-mini);
   padding: var(--width-mini);
-    border-radius: var(--width-small);
 }
 .gallery-element > img {
   inline-size: 100%;
