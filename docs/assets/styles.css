@@ -5,7 +5,7 @@
 body {
   width: 90vmin;
   margin: auto;
-  outline-style: dashed;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /*custom properties library*/
   --width-micro: 0.5rem;
   --width-mini: 0.75rem;
@@ -31,7 +31,7 @@ body {
   display: grid;
   grid-template-rows: min-content;
   max-width: 250px;
-  gap: var(--width-small);
+  gap: var(--width-mini);
   padding: var(--width-small);
   background: rgba(0, 0, 0, 0.2);
   border-radius: var(--width-small);
