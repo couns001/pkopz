@@ -20,9 +20,10 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .gallery-section {
   display: grid;
+  background: rgba(0, 0, 0, 0.2);
   gap: var(--width-small);
   grid-auto-flow: column;
-  grid-auto-columns: 23%;
+  grid-auto-columns: 21%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   margin-bottom: var(--width-regular);
@@ -32,9 +33,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   grid-template-rows: min-content;
   max-width: 250px;
   gap: var(--width-mini);
-  padding: var(--width-small);
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: var(--width-small);
+  padding: var(--width-mini);
+    border-radius: var(--width-small);
 }
 .gallery-element > img {
   inline-size: 100%;
