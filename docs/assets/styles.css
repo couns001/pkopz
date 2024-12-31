@@ -1,11 +1,15 @@
 /*css file created by couns001*/
 /*created 2024-10-31 | recreated 2024-12-20*/
 
-/*main parameters*/
+/*fonts*/
+:is(h1, h2, h3, h4) {
+  font-family: "Poiret One", Arial, Helvetica, sans-serif;
+}
+/*main dimensions*/
 body {
   width: 90vmin;
   margin: auto;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: 'Pontano Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /*custom properties library*/
   --width-micro: 0.5rem;
   --width-mini: 0.75rem;
@@ -14,9 +18,6 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --width-medium: 2.5rem;
   --width-large: 5rem;
   --width-huge: 10rem;
-}
-:is(h1, h2, h3, h4) {
-  font-family: "Poiret One", Arial, Helvetica, sans-serif;
 }
 .gallery-section {
   display: grid;
@@ -34,7 +35,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   grid-template-rows: min-content;
   max-width: 250px;
   gap: var(--width-mini);
-  padding: var(--width-mini);
+  padding: var(--width-micro);
 }
 .gallery-element > img {
   inline-size: 100%;
