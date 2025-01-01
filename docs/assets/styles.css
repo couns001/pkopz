@@ -3,7 +3,6 @@
 
 /*base parameters*/
 :root {
-  font-family: "Pontano Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /*custom properties library*/
   --width-micro: 0.5rem;
   --width-mini: 0.75rem;
@@ -18,9 +17,12 @@
 }
 :is(h1, h2, h3, h4) {
   font-family: "Poiret One", Arial, Helvetica, sans-serif;
+  color: var(--color-1);
 }
 /*main dimensions*/
 body {
+  font-family: "Pontano Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-2);
   width: 95vmin;
   margin: auto;
 }
