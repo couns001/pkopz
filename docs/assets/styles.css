@@ -29,6 +29,8 @@ body {
 .content-block {
   background: var(--color-3);
   margin: auto;
+  padding-block: var(--width-mini);
+  border-radius: var(--width-mini);
 }
 .gallery-banner {
   display: grid;
