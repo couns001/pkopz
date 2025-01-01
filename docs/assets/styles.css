@@ -13,7 +13,7 @@
   --width-huge: 10rem;
   --color-1: #0F2027;
   --color-2:#2C5364;
-  --color-3:#00000065;
+  --color-3:rgba(0, 0, 0, 0.624);
 }
 :is(h1, h2, h3, h4) {
   font-family: "Poiret One", Arial, Helvetica, sans-serif;
@@ -27,7 +27,7 @@ body {
   margin: auto;
 }
 .content-block {
-  background: var(--color-3)
+  background: var(--color-3);
   margin: auto;
 }
 .gallery-banner {
