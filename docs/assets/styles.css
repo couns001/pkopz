@@ -27,7 +27,6 @@ body {
 .content-block {
   background: var(--color-3)
   margin: auto;
-  width: max-content;
 }
 .gallery-banner {
   display: grid;
