@@ -14,6 +14,7 @@
   --color-1: #0F2027;
   --color-2:#2C5364;
   --color-3:rgba(0, 0, 0, 0.314159);
+  --color-4: #fff;
 }
 :is(h1, h2, h3, h4) {
   font-family: "Poiret One", Arial, Helvetica, sans-serif;
@@ -28,9 +29,12 @@ body {
 }
 .content-block {
   background: var(--color-3);
-  margin: auto;
-  padding-block: var(--width-mini);
   border-radius: var(--width-mini);
+}
+.content-block > :is(h1, h2, h3, h4) {
+  margin: auto;
+  font-family: "Poiret One", Arial, Helvetica, sans-serif;
+  color: var(--color-4);
 }
 .gallery-banner {
   display: grid;
