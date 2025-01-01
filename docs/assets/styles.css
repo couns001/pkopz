@@ -12,6 +12,9 @@
   --width-medium: 2.5rem;
   --width-large: 5rem;
   --width-huge: 10rem;
+  --color-1: #0F2027;
+  --color-2:#2C5364;
+  --color-3:#00000033;
 }
 :is(h1, h2, h3, h4) {
   font-family: "Poiret One", Arial, Helvetica, sans-serif;
@@ -21,14 +24,14 @@ body {
   width: 95vmin;
   margin: auto;
 }
-.gallery-border {
-  background: rgba(0, 0, 0, 0.2);
+.content-block {
+  background: var(--color-3)
   margin: auto;
   width: max-content;
 }
 .gallery-banner {
   display: grid;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--color-3)
   gap: var(--width-small);
   grid-auto-flow: column;
   grid-auto-columns: 21%;
