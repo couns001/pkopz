@@ -34,7 +34,7 @@ body {
 }
 .content-block > :is(h1, h2, h3, h4) {
   margin: auto;
-  font-family: "Poiret One", Arial, Helvetica, sans-serif;
+  justify-content:center;
 }
 .gallery-banner {
   display: grid;
