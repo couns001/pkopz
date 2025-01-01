@@ -14,7 +14,7 @@
   --width-huge: 10rem;
   --color-1: #0F2027;
   --color-2:#2C5364;
-  --color-3:#00000033;
+  --color-3:#00000065;
 }
 :is(h1, h2, h3, h4) {
   font-family: "Poiret One", Arial, Helvetica, sans-serif;
@@ -30,7 +30,6 @@ body {
 }
 .gallery-banner {
   display: grid;
-  background: var(--color-3)
   gap: var(--width-small);
   grid-auto-flow: column;
   grid-auto-columns: 21%;
