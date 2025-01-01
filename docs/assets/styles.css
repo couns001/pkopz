@@ -2,7 +2,7 @@
 /*created 2024-10-31 | recreated 2024-12-20*/
 
 /*base parameters*/
-:root{
+:root {
   font-family: "Pontano Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /*custom properties library*/
   --width-micro: 0.5rem;
@@ -18,10 +18,15 @@
 }
 /*main dimensions*/
 body {
-  width: 90vmin;
+  width: 95vmin;
   margin: auto;
 }
-.gallery-section {
+.gallery-border {
+  background: rgba(0, 0, 0, 0.2);
+  margin: auto;
+  width: max-content;
+}
+.gallery-banner {
   display: grid;
   background: rgba(0, 0, 0, 0.2);
   gap: var(--width-small);
@@ -29,7 +34,7 @@ body {
   grid-auto-columns: 21%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
-  border-radius: var(--width-small);
+  border-radius: var(--width-mini);
   margin-bottom: var(--width-regular);
 }
 .gallery-element {
@@ -37,11 +42,11 @@ body {
   grid-template-rows: min-content;
   max-width: 250px;
   gap: var(--width-mini);
-  padding: var(--width-micro);
+  padding: var(--width-mini);
 }
 .gallery-element > img {
   inline-size: 100%;
   aspect-ratio: 9/16;
   object-fit: cover;
-  border-radius: var(--width-small);
+  border-radius: var(--width-mini);
 }
