@@ -13,24 +13,33 @@
   --width-huge: 10rem;
   --color-1: #0f2027;
   --color-2: #2c5364;
-  --color-3: rgba(0, 0, 0, 0.314159);
+  --color-3: rgba(0, 0, 0, 0.06125);
   --color-4: #fff;
 }
 :is(h1, h2, h3, h4) {
-  font-family: "Poiret One", Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: var(--color-1);
 }
+
 /*main dimensions*/
 body {
-  font-family: "Pontano Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Nunito Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   color: var(--color-2);
   width: 95vmin;
   margin: auto;
 }
+
+/*elements*/
 .content-block {
   background: var(--color-3);
   border-radius: var(--width-mini);
   color: var(--color-4);
+  margin: auto;
 }
 
 .gallery-banner {
@@ -55,4 +64,39 @@ body {
   aspect-ratio: 9/16;
   object-fit: cover;
   border-radius: var(--width-mini);
+}
+.popup {
+  display: none;
+  position: fixed;
+  border-radius: var(--width-mini);
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #fff;
+  z-index: 20;
+}
+#popup2:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -2;
+}
+
+#popup2:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  z-index: -1;
 }
