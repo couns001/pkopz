@@ -34,21 +34,28 @@ body {
 
 /*elements*/
 header {
-  height: 90vh;
-  height: 90svh;
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  height: 95svh;
   margin: auto;
+}
+header img {
+  align-self: center;
 }
 nav {
   display: block;
-  background-color: #fff;
+  background-color: var(--color-1);
+  backdrop-filter: blur(20px);
   margin: auto;
   position: sticky;
   top: 0;
   margin: auto;
-    z-index: 5;
+  z-index: 5;
 }
-nav h1{
-  padding: 0 var(--width-mini);
+nav h1 {
+  margin: auto;
+  color: #fff;
 }
 nav ul {
   background-color: var(--color-1);
@@ -61,7 +68,9 @@ nav li {
   display: inline-block;
   padding: 0 var(--width-micro);
 }
-
+nav li a {
+  color: #fff;
+}
 .content-block {
   background: var(--color-3);
   border-radius: var(--width-mini);
@@ -97,7 +106,8 @@ nav li {
   border-radius: var(--width-mini);
 }
 .gallery-banner:hover .gallery-element {
-  filter: blur(10);  filter: brightness(0.25);
+  filter: blur(10);
+  filter: brightness(0.25);
 }
 
 .gallery-banner .gallery-element:hover {
