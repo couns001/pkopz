@@ -1,0 +1,21 @@
+Raf Simons, Charles Jeffery Loverboy
+
+By 28/01
+click to enter logo overlay
+
+brand font strong all caps sans-serif
+ - bebas neue with slightly-larger kerning
+body text Nunito Sans, light (300)
+
+gallery bckgrd - lighter grey (25%)
+
+"portfolio" > "collections"
+jeera to send names
+clickable pop-up for each design line
+
+menu bar before logo block (centred) (always there top sticky div)
+pre-order | socials |
+
+next:
+set up pre-orders form
+hover colour else, monochrome

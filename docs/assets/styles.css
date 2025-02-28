@@ -4,133 +4,181 @@
 /*base parameters*/
 :root {
   /*custom properties library*/
-  --size-micro: 0.5rem;
-  --size-mini: 0.75rem;
-  --size-small: 1rem;
-  --size-regular: 1.25rem;
-  --size-medium: 2.5rem;
-  --size-large: 5rem;
-  --size-huge: 10rem;
-  --size-giant: 15rem;
+  --size-micro    : 0.5rem;
+  --size-mini     : 0.75rem;
+  --size-small    : 1rem;
+  --size-regular  : 1.25rem;
+  --size-medium   : 2.5rem;
+  --size-large    : 5rem;
+  --size-huge     : 10rem;
+  --size-giant    : 15rem;
   --size-monstrous: 17.5rem;
-  --size-titanic: 20rem;
-  --color-1: #0f2027;
-  --color-2: #2c5364;
-  --color-3: rgba(0, 0, 0, 0.06125);
-  --color-4: #fff;
+  --size-titanic  : 20rem;
+  --color-1       : #0f2027;
+  --color-2       : #2c5364;
+  --color-3       : rgba(0, 0, 0, 0.06125);
+  --color-4       : #fff;
 }
 
 :is(h1, h2, h3, h4) {
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-style: normal;
-  color: var(--color-1);
-  padding: 0 var(--size-small);
+  font-style : normal;
+  color      : var(--color-1);
+  padding    : 0 var(--size-small);
 }
 
 body {
-  font-family: "Nunito Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family        : "Nunito Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  color: var(--color-2);
-  margin: auto;
+  font-weight        : 300;
+  font-style         : normal;
+  color              : var(--color-2);
+  margin             : auto;
 }
 
-/*standard elements*/
+p {
+  padding: 0 var(--size-medium);
+}
+
+/*standard elements and their children*/
+/*Their children may or may not be standard*/
 header {
-  height: calc(100svh - var(--size-medium));
-  margin: 0;
-  padding: 0;
-  width: 99svw;
-  margin: auto;
+  height  : calc(100svh - var(--size-medium));
+  margin  : 0;
+  padding : 0;
+  width   : 99svw;
+  margin  : auto;
   overflow: hidden;
 }
 
-.logo_vidbox {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo_vidbox video {
-  position: absolute;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
-  object-fit: cover;
-  z-index: -1;
-}
-
-header img {
-  display: flex;
-  position: relative;
-  vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: contain;
-}
-
-@media screen and (width<1450px) {
-  header > video {
-    display: none;
-  }
-}
 
 nav {
-  position: sticky;
-  top: 0;
-  overflow: hidden;
+  position        : sticky;
+  top             : 0;
+  height          : var(--size-medium);
+  overflow        : hidden;
   background-color: var(--color-1);
-  padding: 0 var(--size-medium);
-  display: block;
-  z-index: 4;
+  padding         : 0 var(--size-medium);
+  display         : block;
+  z-index         : 4;
 }
 
 nav h1 {
-  display: flexbox;
-  margin: auto;
+  display: inline-flex;
+  float  : inline-start;
+  margin : auto;
   padding: 0;
-  color: #fff;
+  color  : #fff;
 }
 
 nav ul {
   background-color: var(--color-1);
-  color: var(--color-4);
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  color           : var(--color-4);
+  list-style-type : none;
+  margin          : 0;
+  padding         : 0;
 }
 
 nav li {
-  display: flexbox;
+  display   : inline;
   align-self: center;
-  padding: 0 var(--size-micro);
+  padding   : 0 var(--size-micro);
 }
 
 nav li a {
   color: #fff;
 }
 
-figure img {
-  width: 500px;
+dialog {
+  border-radius   : var(--size-mini);
+  position        : fixed;
+  border          : 2px solid var(--color-2);
+  overflow        : scroll;
+  height          : 66dvh;
+  width           : min(90svw, 800px);
+  margin          : auto;
+  padding         : min(var(--size-micro) 50ch);
+  column-gap      : min(var(--size-micro) 50ch);
+  background-color: var(--color-4);
+  align-items     : center;
+  justify-content : center;
+  display         : flex;
+  flex-wrap       : wrap;
+}
+
+dialog img {
+  max-height   : 100%;
+  min-width    : 300px;
+  max-width    : 580px;
+  overflow     : auto;
+  border-radius: var(--size-mini);
+  object-fit   : contain;
+}
+
+dialog hr {
+  color: var(--color-2);
+}
+
+dialog ul {
+  list-style-type: none;
+  margin         : 0;
+  padding        : 0;
+}
+
+dialog .image_detail {
+  height : 60%;
+  width  : 240px;
+  margin : 0;
+  padding: 0;
+  var(--size-micro);
+}
+
+/*non-standard divs and their children*/
+.logo_vidbox {
+  position       : relative;
+  height         : 100%;
+  width          : 100%;
+  overflow       : hidden;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.logo_vidbox img {
+  position : absolute;
+  top      : 50%;
+  left     : 50%;
+  transform: translate(-50%, -50%);
+  z-index  : 5;
+}
+
+.logo_vidbox video {
+  position  : absolute;
+  width     : auto;
+  height    : auto;
+  min-width : 100%;
+  min-height: 100%;
+  top       : 50%;
+  left      : 50%;
+  transform : translate(-50%, -50%);
+  margin    : 0;
+  padding   : 0;
+  object-fit: cover;
+  z-index   : -50;
+}
+
+@media screen and (width<800px) {
+  header>.logo_vidbox>video {
+    display: none;
+  }
 }
 
 .content-block {
-  background: var(--color-3);
+  background   : var(--color-3);
   border-radius: var(--size-mini);
-  color: var(--color-4);
-  margin: auto;
+  color        : var(--color-4);
+  margin       : auto;
 }
 
 .content-block h3 {
@@ -138,28 +186,26 @@ figure img {
 }
 
 .gallery-banner {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: min-content;
-  overflow-x: auto;
+  display                   : grid;
+  gap                       : var(--size-small);
+  grid-auto-flow            : column;
+  grid-auto-columns         : 19%;
+  overflow-x                : auto;
   overscroll-behavior-inline: contain;
-  border-radius: var(--size-mini);
-  margin-bottom: var(--size-regular);
 }
 
 .gallery-element {
-  display: grid;
-  grid-template-rows: min-content;
-  width: 250px;
-  padding: min(5rem, 20px);
-  transition: 0.4s;
+  display           : grid;
+  grid-template-rows: auto;
+  gap               : var(--size-small);
+  padding           : 0 var(--size-small);
+  transition        : 0.4s;
 }
 
 .gallery-element img {
-  inline-size: 100%;
-  aspect-ratio: 9/16;
-  object-fit: cover;
-  object-position: center;
+  inline-size  : 100%;
+  aspect-ratio : 9/16;
+  object-fit   : cover;
   border-radius: var(--size-mini);
 }
 
@@ -174,24 +220,6 @@ figure img {
 }
 
 .about img {
-  float: right;
+  float        : right;
   shape-outside: circle(55%);
-}
-
-.figpop {
-  width: min(700px, 95svw);
-  margin: auto;
-  padding: 4rem;
-}
-
-.figure_details {
-  display: inline-block;
-  width: 33.3%;
-}
-
-.figure_details ul {
-  color: var(--color-2);
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
