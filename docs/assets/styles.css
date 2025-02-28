@@ -130,8 +130,7 @@ dialog .image_detail {
   height : 60%;
   width  : 240px;
   margin : 0;
-  padding: 0;
-  var(--size-micro);
+  padding: 0 var(--size-micro);
 }
 
 /*non-standard divs and their children*/
