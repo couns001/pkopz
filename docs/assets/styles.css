@@ -219,11 +219,16 @@ dialog .information {
 }
 
 /*modifications for phone viewing*/
+@media screen and (width<1200px){
+  .gallery-banner {
+    grid-auto-columns: 43%;
+  }
+}
 @media screen and (width<800px) {
   header > .logo_vidbox > video {
     display: none;
   }
-  .gallery-banner {
+.gallery-banner {
     grid-auto-columns: 67%;
   }
 }
