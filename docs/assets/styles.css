@@ -169,12 +169,6 @@ dialog .information {
   z-index: -50;
 }
 
-@media screen and (width<800px) {
-  header > .logo_vidbox > video {
-    display: none;
-  }
-}
-
 .content-block {
   background: var(--color-3);
   border-radius: var(--size-mini);
@@ -188,15 +182,14 @@ dialog .information {
 
 .gallery-banner {
   display: grid;
-  gap: 0 min(6ch, var(--size-small));
+  gap: var(--size-small);
   grid-auto-flow: column;
-  grid-auto-columns: 19%;
+  grid-auto-columns: 17%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 }
 
 .gallery-element {
-  height: min(80svh, 800px);
   display: grid;
   grid-template-rows: auto;
   gap: min(6ch, var(--size-small));
@@ -223,4 +216,12 @@ dialog .information {
 .about img {
   float: right;
   shape-outside: circle(55%);
+}
+@media screen and (width<800px) {
+  header > .logo_vidbox > video {
+    display: none;
+  }
+  .gallery-banner {
+    grid-auto-columns: 67%;
+  }
 }
