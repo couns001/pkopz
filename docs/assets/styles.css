@@ -128,7 +128,7 @@ dialog ul {
   padding: 0;
 }
 
-dialog .image_detail {
+dialog .information {
   height: 60%;
   width: 240px;
   margin: 0;
@@ -188,7 +188,7 @@ dialog .image_detail {
 
 .gallery-banner {
   display: grid;
-  gap: var(--size-small);
+  gap: 0 min(6ch, var(--size-small));
   grid-auto-flow: column;
   grid-auto-columns: 19%;
   overflow-x: auto;
@@ -196,10 +196,10 @@ dialog .image_detail {
 }
 
 .gallery-element {
+  height: min(80svh, 800px);
   display: grid;
   grid-template-rows: auto;
   gap: min(6ch, var(--size-small));
-  padding: 0 var(--size-small);
   transition: 0.4s;
 }
 
